@@ -1,0 +1,29 @@
+Conteúdo Programático Angular
+	Módulo 0 - Iniciante
+		Instalação
+		Arquitetura
+		Criação de componentes
+		Criação de rotas
+		Customizar layout
+		Material Design
+	
+	Módulo 1 - Intermediário
+		Formulário Reativo
+		GET
+		POST
+		PUT
+		DELETE
+		Criação de funcionalidades
+		Consumir API
+
+	Módulo 2 - Avançado
+		Implementação de bibliotecas NGX
+		Implementação de GEO Localização
+		Implementação de Câmera
+
+
+
+
+Convenções do Angular
+	colocar $ no final da variável indica que é um Obervable
+	colocar _ em nome de variável quando injeção de dependência

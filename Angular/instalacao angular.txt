@@ -1,0 +1,55 @@
+Instalar GIT
+https://git-scm.com/downloads
+executar .exe e clicar sempre em next
+
+Verificar versão ng version e node --version
+https://angular.io/guide/versions
+
+Criar novo projeto angular 17 com app.module
+ng new nome-projeto --no-standalone
+Instalar rotas
+Escolher SCSS
+Escolher NÃO em serverside to render
+
+Tirar todas as dúvidas das funcionalidades do projeto
+
+Componentes
+Identificar os componentes do projeto
+Declarar os módulos que serão da tela 1, tela 2, ...
+Exportar módulo para usar o mesmo componete em mais telas
+Componentes são declarados e Módulos são importados
+Todos os componentes no Angular são classes. Para informar ao Angular que a classe é um componente é preciso usar um decorator no arquivo html <nome-do-component></nome-do-component>
+Um componente pode ser declarado em apenas um módulo
+	Tem que criar um modulo pai para importar todos os componentes que o compõe
+	Importar o módulo pai parao app.module
+	Exportar os componentes na módulo pai
+	Só precisa ser exportado os componentes que fazem referencia direta no modulo
+
+Estilização
+Importar aquivo css @import "Caminho/Do/Arquivo";
+Importar arquivo personalizado @import "NomeDoArquivo"
+Criar pasta e arquivo específico para variáveis css
+	styles > _variables.scss
+		código
+	Declarar em angular.json dentro de "architect": { } depois de "scripts": []
+		"stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            }
+		
+Instalar Angular Material
+	ng add @angular/material
+	
+Atualização para componente específico
+	:host ::ng-deep NomeDaTag .classe
+	::ng-deep não funciona em contexto global
+
+@Component({
+  selector: 'app-card-button-cancel',
+  templateUrl: './card-button-cancel.component.html',
+  styleUrl: './card-button-cancel.component.scss'
+  encapsulation: ViewEncapsulation.None = Faz com que o css do component fique global afetando outros arquivos e sendo afetado
+  encapsulation: ViewEncapsulation.Emulated = Faz com que o css do component seja afetado por outros components e não afeta => PADRÃO
+  encapsulation: ViewEncapsulation.ShadowDom = Não é afetado por componentes de fora. Afeta os componentes filhos
+})
