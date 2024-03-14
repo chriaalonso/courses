@@ -1,0 +1,27 @@
+npm install -D tailwindcss
+npx tailwindcss init
+
+/** @type {import('tailwindcss').Config} */
+export const content = ["./src/**/*.{html,js}"]; // template path => onde escreve classe css = 'pasta/que/abrange/sistema
+export const theme = {
+  extend: {},
+};
+export const plugins = [];
+export const safelist = [{ pattern: /^.*$/ }];
+
+Criar arquivo src/input.css e colocar dentro do arquivo
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Criar arquivo de saída dist/output.css
+
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch // pasta 
+
+npm init -y
+npm i tailwindcss autoprefixer
+npx tailwindcss init
+npm run start
+
+npx tailwindcss -o tailwind.css
+

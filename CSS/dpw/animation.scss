@@ -1,0 +1,18 @@
+.c-plane {
+  background: url("https://cdn2.iconfinder.com/data/icons/world-flag-icons/256/Flag_of_Brazil.png")
+    no-repeat center;
+  background-size: contain;
+  height: rem(145);
+  position: absolute;
+  top: 40%;
+  width: rem(200);
+
+  animation: fly;
+  animation-duration: 2s;
+}
+
+@keyframes fly {
+  100% {
+    transform: translateX(calc(100vw - 200px));
+  }
+}
