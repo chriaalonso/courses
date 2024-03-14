@@ -1,0 +1,22 @@
+npx create-expo-app --template
+escolher typescript
+deletar pastas app, components, constants, assets > fonts
+substituir images assets > images por imagens personalizadas
+criar duas pastas assets. uma root para acesso externo do app e outra pasta interna para acesso interno ao app
+npx expo start
+tecla A para executar no Android
+npm i nativewind@2.0.11
+npm i tailwindcss@3.3.2 --save-dev
+npx tailwindcss init
+adicionar
+	content: ["./src/app/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
+adicionar em Babel
+	plugins: ["nativewind/babel"]
+start servidor
+	npx expo start --clear
+adicionar exensão tailwindcss intelisense
+criar pasta src > types - nativewind.d.ts
+	/// <reference types="nativewind/types" />
+criar arquivo app > _layout.tsx
+instalar fonte google terminal npx expo install expo-font @expo-google-fonts/inter
+instalar zustand para manipular estados
