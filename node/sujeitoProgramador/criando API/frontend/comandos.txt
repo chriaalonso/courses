@@ -1,0 +1,47 @@
+Instalar vite
+  npm create vite@latest frontend
+  Selecionar
+    React
+    Typescript padrão
+  
+  cd NomeDaPasta
+  npm i
+  Abrir vsCode
+
+  Rodar projeto
+    npm run dev
+
+  Alterar title index.html principal
+  Apagar conteúdo do componente App.tsx
+  Deletar conteúdo do arquivo index.css
+  Deletar arquivo App.css
+  Deletar pasta assets
+
+  Instalar tailwinwd css
+    https://tailwindcss.com/docs/guides/vite
+    npm install -D tailwindcss postcss autoprefixer
+
+    Inicializar tailwind css
+      npx tailwindcss init -p
+
+    Colocar dentro de tailwind.config.js
+      content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
+    Colocar dentro do arquivo index.css
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+  Começa construir a página no App.tsx
+
+  Instalar icones
+    npm i react-icons
+    importar import { FiTrash } from "react-icons/fi"; em App.tsx
+
+  Instalar axios para consumir API
+    npm i axios
+    Criar pasta service e a função para chamar a URL base
+  
+  Importar api para App.tsx
+
+  Importar import { useEffect, useState } from "react"; para App.tsx

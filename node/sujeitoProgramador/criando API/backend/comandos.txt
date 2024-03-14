@@ -1,0 +1,37 @@
+npm init -y
+
+npm install typescript --save-dev
+
+tsc --init
+
+criar pasta src
+  criar dois arquivos
+    server.ts
+    routes.ts
+
+install
+  npm i fastify @fastify/cors
+
+  npm i tsx
+
+  npm i @types/node --save-dev
+
+Mongo DB (não relacional)
+  configurar plano gratuito
+  deletar IP sugerido e colocar acesso geral
+
+Prisma.io
+  ORM para comunicar com banco de dados
+  fazer schema
+  tabelas
+  Install
+    npm install prisma --save-dev
+    npm install @prisma/client
+    npx prisma init
+
+  Personalizar arquivo schema.prisma
+
+  Colar URL MongoDB no arquivo .env
+
+  Install
+    npx prisma generate
